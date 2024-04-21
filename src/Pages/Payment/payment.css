@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.stroke-secondary-300 {
+    stroke: #90a3bf;
+    color: #3563E9;
+}
+
+.form-box {
+    display: flex;
+    gap: 60px;
+}
+
+
+form {
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.form-1 {
+    width: 670px;
+    height: 336px;
+}
+
+.form-2 {
+    width: 670px;
+    padding-bottom: 40px;
+}
+
+.form-3 {
+    width: 670px;
+    padding-bottom: 30px;
+}
+
+.form-4 {
+    width: 670px;
+    height: 484px;
+}
+
+.form-5 {
+    width: 650px;
+    height: 596px;
+}
+
+.review{
+font-family: "Plus Jakarta Sans", sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: -0.02em;
+text-align: left;
+color:#596780 ;
+}
+
+hr{
+    background-color: #e7e7e78a;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+input[type="text"],
+input[type="time"],
+input[type="date"],
+select {
+    width: 286px;
+    height: 48px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding-right: 20px;
+}
+
+::placeholder {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #90A3BF
+}
+
+label {
+    margin-top: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.bill-info h5 {
+    color: #1A202C;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    text-align: left;
+
+}
+
+.bill-info p,
+p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #90A3BF;
+}
+
+
+.Total{
+    padding: 10px;
+}
+.sub-total{
+font-family: "Plus Jakarta Sans", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #90A3BF;
+}
+
+.payment {
+    background-color: #F6F7F9;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    padding-bottom: 20px;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.grey {
+    background-color: #F6F7F9;
+}
+
+.paypal,
+.bitcoin {
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #F6F7F9;
+    padding: 15px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.total-price{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #1A202C;
+}
+
+
+.price-text{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.Apply-now{
+    margin-left: 20%;
+}
+
+.btn-now {
+    width: 140px;
+    height: 56px;
+    padding: 0px, 20px, 0px, 20px;
+    border-radius: 10px;
+    gap: 8px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    background-color: #3563E9;
+    cursor: pointer;
+}
+
+.safe {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+
+/*.rental-sum {
+    width: 492px;
+    height: 560px;
+}*/
+
+
+.car-img {
+    background-image: url(./image/brg.png);
+    background-color: #287bd3;
+    width: 212px;
+    height: 138px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-img img {
+    width: 90%;
+}
+
+.input span {
+    position: absolute;
+    top: 26px;
+    left: 340px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: right;
+    cursor: pointer;
+    color: #1A202C;
+}
+
+
+.div {
+    color: #90a3bf;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: right;
+
+}
+
+button{
+    outline: none;
+    border: none;
+}

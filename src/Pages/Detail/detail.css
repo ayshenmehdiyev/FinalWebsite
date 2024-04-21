@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); 
+ 
+ section {
+    background-color: #F6F7F9;
+}
+
+.reviews {
+    background-color: #fff;
+    width: 1365px;
+    height: 452px;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.type-text{
+font-family: "Plus Jakarta Sans", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.02em;
+color: #90A3BF;
+}
+
+.info-text{
+font-family: "Plus Jakarta Sans", sans-serif;
+font-size: 18px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: -0.02em;
+color: #596780;
+}
+
+.box img{
+    margin-left: 24%;
+    margin-top: 1%;
+}
+
+.box{
+    width: 644px;
+    height: 360px;
+    /*background-image: url(../../assets/Group.png);*/
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.car-image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.car-info p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #596780;
+}
+
+.car-detail {
+    width: 649px;
+    height: 508px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+
+}
+
+.rent-now {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.reviews p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #596780
+}
+
+.reviews h5 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    text-align: left;
+
+}
+
+.profile-comment-2,
+.profile-comment-1 {
+    margin-top: 20px;
+}
+
+.number {
+    width: 44px;
+    height: 28px;
+    margin-left: 20px;
+    border-radius: 4px;
+    gap: 8px;
+    background-color: #3563E9;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.box{
+    background-color: #3563E9;
+    border-radius: 10px;
+}
+
+.box-photo{
+ display: flex;
+ gap: 8px;
+}

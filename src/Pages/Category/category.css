@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.select {
+    width: 360px;
+    height: 1340px;
+    padding: 30px 0px 0px 60px;
+    background-color: #fff;
+}
+
+
+
+
+.type p,
+.capacity p,
+.max-price p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: justify;
+    color: #596780;
+}
+
+.type p,
+.capacity p {
+    display: flex;
+    flex-direction: row;
+}
+
+.select span {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #90A3BF;
+}
+
+
+/**/
+input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4c4c4cc1;
+}
+
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 16px;
+    color: #ffffff;
+    display: none;
+}
+
+
+input[type="checkbox"]:checked {
+    background-color: #3563E9;
+    border: none;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+
+
+
+.show-more button {
+    width: 156px;
+    height: 44px;
+    padding: 0px, 20px, 0px, 20px;
+    border-radius: 4px;
+    gap: 8px;
+    background-color: #3563E9;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+/**/
+
+#section,
+section {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    width: 1312px;
+    margin: auto;
+    margin-top: 60px;
+
+}
+
+.cars{
+    padding-bottom: 50px;
+}
+
+
+.boxcar {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 304px;
+    height: 388px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.boxcar .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features,
+.price-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.features div {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #90A3BF;
+}
+
+.price {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.head div p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #90A3BF;
+}
+
+h4 {
+    color: #1A202C;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+
+.rentbnt {
+    background-color: #224ed3;
+    cursor: pointer;
+}
+
+
+.btn {
+    margin-left: 15px;
+    width: 120px;
+    height: 44px;
+    padding: 0px, 20px, 0px, 20px;
+    border-radius: 4px;
+    gap: 8px;
+    padding: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
