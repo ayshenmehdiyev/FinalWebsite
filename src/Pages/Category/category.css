@@ -101,33 +101,29 @@ input[type="checkbox"]:checked:after {
 
 /**/
 
-#section,
-section {
+#sectionn{
+    margin-top: 30px;
+    width: 1085px;
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 30px;
-    width: 1312px;
-    margin: auto;
-    margin-top: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+    padding: 0px;
 
 }
 
-.cars{
-    padding-bottom: 50px;
-}
 
 
-.boxcar {
+.boxcarr {
+    width: 100%;
+    height: 379px;
     box-sizing: border-box;
-    padding: 20px;
-    width: 304px;
-    height: 388px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
+    padding: 10px;
 }
 
-.boxcar .head {
+.boxcarr .head {
     display: flex;
     justify-content: space-between;
 }
@@ -201,4 +197,9 @@ h4 {
     text-align: center;
     color: #fff;
     cursor: pointer;
+}
+
+
+.car-foto{
+    width: 100%;
 }

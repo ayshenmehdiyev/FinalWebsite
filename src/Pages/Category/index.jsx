@@ -98,7 +98,7 @@ const Category = () => {
 
 
     return (
-        <div className='category d-flex flex-row m-auto h-100'>
+        <div className='d-flex'>
             <div className='select'>
                 <div>
                     <div className='type'>
@@ -122,19 +122,19 @@ const Category = () => {
                     </div>
                 </div>
             </div>
-            <div className='cars' id='section'>
+            <div id='sectionn' className='container'>
                 {item.map((car, index) => {
-                    return <div className="container" key={index}>
-                        <div className="boxcar">
+                    return <div key={index}>
+                        <div className="boxcarr">
                             <div className="head">
                                 <div>
                                     <Link to={`/detail/${car.id}`}><h4>{car.name}</h4> </Link>
                                     <p>{car.type}</p>
                                 </div>
-                                <div ><img src={Emptyheart} alt="" /></div>
+                                <div ><img  src={Emptyheart} alt="" /></div>
                             </div>
                             <div>
-                                <img src={car.img} alt="" />
+                                <img  className="car-foto" src={car.img} alt="" />
                                 <img src={Shadow} alt="" />
                             </div>
                             <div className="features">
