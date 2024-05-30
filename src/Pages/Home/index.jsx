@@ -19,7 +19,6 @@ const Home = () => {
                     <div className="col-12">
                         <section>
                             <div className='boxes'>
-                               
                                 <div className='box-1'>
                                     <div className='text'>
                                         <h3>The Best Platform for Car Rental</h3>
@@ -183,7 +182,8 @@ const Home = () => {
                                 })}
                             </div>
                         </section></div>
-                </div></div>
+                </div>
+            </div>
 
 
         </>

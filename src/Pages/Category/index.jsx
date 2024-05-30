@@ -128,7 +128,7 @@ const Category = () => {
                         <div className="boxcarr">
                             <div className="head">
                                 <div>
-                                    <Link to={`/detail/${car.id}`}><h4>{car.name}</h4> </Link>
+                                    <Link to={`/detail/${car.id}`}><h4>{car.name}</h4></Link>
                                     <p>{car.type}</p>
                                 </div>
                                 <div ><img  src={Emptyheart} alt="" /></div>

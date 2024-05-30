@@ -9,6 +9,7 @@
 .form-box {
     display: flex;
     gap: 60px;
+    padding: 0px;
 }
 
 
@@ -42,7 +43,7 @@ form {
 }
 
 .form-5 {
-    width: 650px;
+    width: 520px;
     height: 596px;
 }
 
@@ -213,12 +214,6 @@ color: #90A3BF;
     gap: 14px;
     margin-top: 16px;
 }
-
-
-/*.rental-sum {
-    width: 492px;
-    height: 560px;
-}*/
 
 
 .car-img {

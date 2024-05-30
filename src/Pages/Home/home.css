@@ -95,6 +95,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    margin-top: 30px;
 }
 
 .car-info {
@@ -163,6 +164,7 @@ h4 {
     line-height: 30px;
     letter-spacing: -0.03em;
     text-align: left;
+    text-decoration: none;
 }
 
 .section {
@@ -174,15 +176,6 @@ h4 {
     padding: 0px;
     margin-left: 0px;
 }
-
-/*.popular {
-    width: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-   
-}*/
 
 .box-1 {
     background-image: url(../../assets/whitee.png);
