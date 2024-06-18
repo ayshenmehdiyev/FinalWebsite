@@ -4,7 +4,7 @@ import './footer.css'
 
 const Footer = () => {
   return (
-       <footer className='mt-5'>
+       <footer>
         <div className='container'>
             <div className='row'>
                 <div className='col-6'>

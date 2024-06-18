@@ -66,7 +66,7 @@ input {
     position: absolute;
     left: 60px;
     top: 10px;
-
+    cursor: pointer;
 }
 
 .img-search {
@@ -85,4 +85,52 @@ input {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+/*****************************************/
+
+/*ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    width: 492px;
+    padding-left: 50px;
+    background-color: #fff;
+}*/
+.list {
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px #ddd;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 40px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    color: #90a3bf49;
+    
+}
+
+.Link-name{
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    color: #000000;
+    line-height: 10px;
+    padding-left: 20px;
+}
+.list div:hover {
+    background-color: #efefef;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
 }

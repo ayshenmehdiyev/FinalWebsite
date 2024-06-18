@@ -4,9 +4,10 @@
     type: "sport",
     steering: "Manual",
     img: "https://morent-website.vercel.app/_next/image?url=%2Fimages%2Fpopular-cars%2Fcar1.png&w=256&q=75",
-    gasoline: "80",
+    gasoline: "80L",
     capacity: "2",
-    price: "$99.00"
+    price: 99.00,
+    reviewer:410
 },
 {
     id: "2",
@@ -14,9 +15,10 @@
     type: "sport",
     steering: "Manual",
     img: "https://morent-website.vercel.app/_next/image?url=%2Fimages%2Fpopular-cars%2Fcar2.png&w=256&q=75",
-    gasoline: "90",
+    gasoline: "90L",
     capacity: "2",
-    price: "$80.00"
+    price: 80.00,
+    reviewer: 310
 
 },
 {
@@ -25,9 +27,10 @@
     type: "Sedan",
     steering: "Manual",
     img: "https://morent-website.vercel.app/_next/image?url=%2Fimages%2Fpopular-cars%2Fcar3.png&w=256&q=75",
-    gasoline: "70",
+    gasoline: "70L",
     capacity: "4",
-    price: "$96.00"
+    price: 96.00,
+    reviewer: 610
 },
 {
     id: "4",
@@ -35,9 +38,10 @@
     type: "SUV",
     steering: "Manual",
     img: "https://morent-website.vercel.app/_next/image?url=%2Fimages%2Frecomendation-cars%2Fcar-1.png&w=256&q=75",
-    gasoline: "70",
+    gasoline: "70L",
     capacity: "6",
-    price: "$72.00"
+    price: 72.00,
+    reviewer: 440
 },
 {   
     id: "5",
@@ -45,9 +49,10 @@
     type: "SUV",
     steering: "Manual",
     img: "https://morent-website.vercel.app/_next/image?url=%2Fimages%2Frecomendation-cars%2Fcar-2.png&w=256&q=75",
-    gasoline: "80",
+    gasoline: "80L",
     capacity: "6",
-    price: "$80.00"
+    price: 80.00,
+    reviewer: 610
 },
 {   
     id: "6",
@@ -55,9 +60,10 @@
     type: "SUV",
     steering: "Manual",
     img: "https://morent-website.vercel.app/_next/image?url=%2Fimages%2Frecomendation-cars%2Fcar-3.png&w=256&q=75",
-    gasoline: "90",
+    gasoline: "90L",
     capacity: "6",
-    price: "$74.00"
+    price: 74.00,
+    reviewer: 500
 },
 {   
     id: "7",
@@ -65,9 +71,10 @@
     type: "Hatchback",
     steering: "Manual",
     img: "https://morent-website.vercel.app/_next/image?url=%2Fimages%2Frecomendation-cars%2Fcar-4.png&w=256&q=75",
-    gasoline: "70",
+    gasoline: "70L",
     capacity: "4",
-    price: "$76.00"
+    price: 76.00,
+    reviewer: 490
 },
 {
     id: "8",
@@ -75,8 +82,9 @@
     type: "SUV",
     steering: "Manual",
     img: "https://morent-website.vercel.app/_next/image?url=%2Fimages%2Frecomendation-cars%2Fcar-5.png&w=256&q=75",
-    gasoline: "80",
+    gasoline: "80L",
     capacity: "6",
-    price: "$80.00"
+    price: 80.00,
+    reviewer: 610
 }
 ]

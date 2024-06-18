@@ -43,6 +43,12 @@ h4 {
     gap: 20px;
 }
 
+.footer-2 p:hover{
+text-decoration: underline;
+cursor: pointer;
+font-weight: 600;
+}
+
 hr {
     width: 100%;
     background-color: #13131329;

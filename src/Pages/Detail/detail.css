@@ -7,7 +7,7 @@
 
 .reviews {
     background-color: #fff;
-    width: 1365px;
+    width: 1300px;
     height: 452px;
     border-radius: 10px;
     padding: 20px 20px;
@@ -56,7 +56,7 @@ color: #596780;
     gap: 20px;
 }
 
-.car-info p {
+.car-infoo p {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -64,19 +64,20 @@ color: #596780;
     letter-spacing: -0.02em;
     text-align: left;
     color: #596780;
+    margin-top: 20px;
 }
 
 .car-detail {
-    width: 649px;
-    height: 508px;
+    width: 549px;
+    height: 478px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
 
 }
 
 .rent-now {
-    margin-top: 20px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -133,4 +134,31 @@ color: #596780;
 .box-photo{
  display: flex;
  gap: 8px;
+}
+.detail{
+    margin-top: 30px;
+}
+.days{
+font-family: "Plus Jakarta Sans", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: -0.02em;
+color: #90A3BF;
+}
+
+.detail-car{
+    padding: 22px;
+    border-radius: 15px;
+    background-size: contain;
+    background-image: url(../../assets/Group.png);
+    background-color: #3563E9;
+}
+.box{
+    background-image: url(../../assets/Group.png);
+    background-color: #3563E9;
+   
+}
+.Main-car img{
+    width: 50%;
 }

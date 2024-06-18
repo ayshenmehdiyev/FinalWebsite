@@ -10,6 +10,7 @@
     display: flex;
     gap: 60px;
     padding: 0px;
+    margin-bottom: 50px;
 }
 
 
@@ -188,7 +189,8 @@ color: #90A3BF;
 }
 
 .Apply-now{
-    margin-left: 20%;
+   color:#287bd3 !important;
+   
 }
 
 .btn-now {
@@ -260,4 +262,13 @@ color: #90A3BF;
 button{
     outline: none;
     border: none;
+}
+.Promo-code{
+    display: flex;
+    flex-direction: column;
+}
+.Promo-code div:nth-child(2){
+    color:#90A3BF;
+    font-size: 18px;
+    text-decoration:line-through;
 }

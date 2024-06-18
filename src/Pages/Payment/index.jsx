@@ -41,10 +41,15 @@ const Payment = () => {
     }
 
     const param = useParams()
+    function Promokod() {
 
+    }
     const cars = data.find((info) => {
         return info.id === param.id;
     })
+
+    const sale = (cars.price * 20 / 100)
+
 
 
     return (
@@ -204,14 +209,14 @@ const Payment = () => {
                                                     <img src={Star} alt="" />
                                                     <img src={Star} alt="" />
                                                     <img src={Emptystar} alt="" />
-                                                    <span className="d-block review">100+ Reviewer</span>
+                                                    <span className="d-block review">{cars.reviewer}+ Reviewer</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <hr />
                                         <div className="Total d-flex flex-row justify-content-between">
                                             <span className='sub-total'>Subtotal</span>
-                                            <span className='price-text'>{cars.price}</span>
+                                            <span className='price-text'>${cars.price}.00</span>
                                         </div>
                                         <div className="Total d-flex flex-row justify-content-between">
                                             <span className='sub-total'>Tax</span>
@@ -219,19 +224,23 @@ const Payment = () => {
                                         </div>
                                     </div>
                                     <div className="input position-relative">
-                                        <input type="text" className="grey w-100 mt-3 mb-3" placeholder="Apply promo code" /><span className='Apply-now'>Apply now</span>
+                                        <input type="text" className="grey w-100 mt-3 mb-3" placeholder="Promo code" readOnly /><span className='Apply-now' >WELCOME20%</span>
                                     </div>
                                     <div className="total-price d-flex flex-row justify-content-between">
                                         <div className="bill-info">
                                             <h5>Total Rental Price</h5>
                                             <p>Overall price and includes rental discount</p>
                                         </div>
-                                        <div>{cars.price}</div>
+                                        <div className='Promo-code'>
+                                            <div>${cars.price - sale}0</div>
+                                            <div>${cars.price}.00</div></div>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                    </div></div></div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     )

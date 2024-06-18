@@ -1,0 +1,10 @@
+
+.ayshen{
+    background-color: blueviolet;
+    position: absolute;
+    z-index: 1;
+    width: 100px ;
+}
+.car-inf{
+    color: black;
+}

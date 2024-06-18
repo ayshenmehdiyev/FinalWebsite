@@ -8,9 +8,20 @@ import Heart from '../../assets/heart.png';
 import Profileuser from '../../assets/profile-2user.png';
 import { Link } from 'react-router-dom';
 import { data } from '../data';
+import Favlist from '../../Components/Favlist';
 
 const Category = () => {
     const [item, setItem] = useState(data)
+    const [value, setValue] = useState(100);
+
+    const handleChange = (event) => {
+        setValue(event.target.value);
+        const updateFilter = data.filter((select) => {
+            return select.price <= value
+        });
+        setItem(updateFilter)
+
+    };
     function Sport(e) {
         if (e.target.checked) {
             const updateFilter = data.filter((select) => {
@@ -100,7 +111,6 @@ const Category = () => {
     return (
         <div className='d-flex'>
             <div className='select'>
-                <div>
                     <div className='type'>
                         <span>TYPE</span>
                         <p><input className='checkbox' type='checkbox' onClick={(e) => Sport(e)} /> Sport (2)</p>
@@ -116,43 +126,72 @@ const Category = () => {
                         <p><input type='checkbox' name='' id='six' value='6' onClick={(e) => six(e)} /> 6 Person (4)</p>
                     </div>
                     <div className='max-price'>
-                        <span>PRICE</span>
-                        <input type='range' name='' id='' />
-                        <p>Max. $100.00</p>
+                        <span className='price-text'>PRICE</span>
+                        <input
+                            type="range"
+                            min="0"
+                            max="100"
+                            step="1"
+                            value={value}
+                            onChange={handleChange}
+                        />
+                        <p className="value-display">Max. ${value}.00</p>
                     </div>
-                </div>
             </div>
-            <div id='sectionn' className='container'>
+            <div id='car-category' className='container'>
                 {item.map((car, index) => {
-                    return <div key={index}>
-                        <div className="boxcarr">
-                            <div className="head">
+                    return <div key={index} id="boxcarr">
+                            <div className="header">
                                 <div>
                                     <Link to={`/detail/${car.id}`}><h4>{car.name}</h4></Link>
                                     <p>{car.type}</p>
                                 </div>
-                                <div ><img  src={Emptyheart} alt="" /></div>
+                                <div ><img src={Emptyheart} alt="" /></div>
                             </div>
-                            <div>
-                                <img  className="car-foto" src={car.img} alt="" />
-                                <img src={Shadow} alt="" />
-                            </div>
+                            <div className='carr'>
+                                        <img className='carr-imgg' src={car.img} alt="" />
+                                    </div>
                             <div className="features">
                                 <div><img src={Gas} alt="" />{car.gasoline}</div>
                                 <div><img src={Carrol} />{car.steering}</div>
                                 <div><img src={Profileuser} />{car.capacity} people</div>
                             </div>
                             <div className="price-box">
-                                <div className="price">{car.price}/ day</div>
+                                <div className="price">${car.price}.00/ day</div>
                                 <div><Link className="btn rentbnt" to={`/payment/${car.id}`}>Rent Car</Link></div>
                             </div>
                         </div>
-                    </div>
+                   
 
                 })}
             </div>
         </div>
     )
 }
+
+
+
+
+/*
+ const [value, setValue] = useState(50);
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+
+  return (
+    <div className="App">
+      <h1>Simple Range Slider</h1>
+      <div className="range-slider-container">
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value={value}
+          onChange={handleChange}
+          className="range-slider"
+        />
+        <div className="value-display">{value}</div>*/
 
 export default Category
