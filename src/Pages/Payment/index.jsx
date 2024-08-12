@@ -10,9 +10,13 @@ import Visa from '../../assets/Visa.png'
 import { useParams } from 'react-router'
 import { data } from '../data'
 /*import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';*/
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Payment = () => {
+
+
     const [name, setName] = useState("")
     const [number, setNumber] = useState("")
     const [adress, setAdress] = useState("")
@@ -37,7 +41,9 @@ const Payment = () => {
     console.log(adress, location)
     function getHandleForm(e) {
         e.preventDefault()
+        toast.success('Sifarış qəbul edildi')
         console.log(value)
+        
     }
 
     const param = useParams()
@@ -47,13 +53,11 @@ const Payment = () => {
     const cars = data.find((info) => {
         return info.id === param.id;
     })
-
     const sale = (cars.price * 20 / 100)
-
-
 
     return (
         <div className="container">
+      <ToastContainer position='top-right' autocClose={0.010} className="custom-toast-container" />
             <div className="row">
                 <div className="col-12">
                     <div className="form-box">
@@ -232,7 +236,7 @@ const Payment = () => {
                                             <p>Overall price and includes rental discount</p>
                                         </div>
                                         <div className='Promo-code'>
-                                            <div>${cars.price - sale}0</div>
+                                            <div>${cars.price - sale}</div>
                                             <div>${cars.price}.00</div></div>
                                     </div>
                                 </form>

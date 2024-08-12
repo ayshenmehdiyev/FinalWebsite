@@ -9,10 +9,14 @@ import Profileuser from '../../assets/profile-2user.png';
 import { Link } from 'react-router-dom';
 import { data } from '../data';
 import Favlist from '../../Components/Favlist';
+import { useDispatch, useSelector} from 'react-redux';
+import { addToFavListAction, removeFromFavListAction } from '../../Redux/actions/favlist.actions';
 
 const Category = () => {
     const [item, setItem] = useState(data)
     const [value, setValue] = useState(100);
+    const dispatch = useDispatch()
+    const state = useSelector(state => state)
 
     const handleChange = (event) => {
         setValue(event.target.value);
@@ -106,8 +110,12 @@ const Category = () => {
         }
 
     }
-
-
+    const addList = (param) => {
+        dispatch(addToFavListAction(param))
+      }
+      const removeProduct = (id)=> {
+        dispatch(removeFromFavListAction(id))
+    }
     return (
         <div className='d-flex'>
             <div className='select'>
@@ -146,7 +154,12 @@ const Category = () => {
                                     <Link to={`/detail/${car.id}`}><h4>{car.name}</h4></Link>
                                     <p>{car.type}</p>
                                 </div>
-                                <div ><img src={Emptyheart} alt="" /></div>
+                                <div >{
+                                    state.find(item => item.id === car.id ) ?
+                                    <img src={Heart}  onClick={() => removeProduct(car.id)} alt="" /> :
+                                    <img src={Emptyheart} onClick={()=> addList(car)} alt="" />
+
+                                }</div>
                             </div>
                             <div className='carr'>
                                         <img className='carr-imgg' src={car.img} alt="" />

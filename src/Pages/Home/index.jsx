@@ -10,24 +10,13 @@ import Profileuser from '../../assets/profile-2user.png';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import CarList from '../../Components/CarList';
 
 
 
 
 
 const Home = () => {
-    const [users, setUsers] = useState([])
-    const [changeColor, setChangeColor] = useState(false)
-
-    useEffect(() => {
-        axios.get('https://665e436d1e9017dc16ef7d74.mockapi.io/car/info/data')
-            .then(response => {
-                setUsers(response.data);
-            })
-    }, [])
-
-
-
     return (
         <>
             <div className="container">
@@ -64,7 +53,7 @@ const Home = () => {
                                             <p>sport</p>
                                         </div>
                                         <div>
-                                            <img src={Emptyheart} alt="" /></div>
+                                            <img src={Emptyheart} alt=""  /></div>
                                     </div>
                                     <div className='car'>
                                         <img className='car-imgg' src={Cahr} alt="" />
@@ -150,32 +139,7 @@ const Home = () => {
                             <div className='view-all'><Link to="/category">View all</Link></div>
                         </div>
                         <section>
-                            <div className='section'>
-                                {users.map((car, index) => {
-                                    return <div className="car-info" key={index}>
-                                        <div className="head">
-                                            <div>
-                                                <Link to={`/detail/${car.id}`}><h4>{car.name}</h4></Link>
-                                                <p>{car.type}</p>
-                                            </div>
-                                            <div>
-                                                <img onClick={() => setChangeColor(!changeColor)} src={changeColor ? Emptyheart : Heart} alt="" /></div>
-                                        </div>
-                                        <div className='car'>
-                                            <img className='car-imgg' src={car.img} alt="" />
-                                        </div>
-                                        <div className="features">
-                                            <div><img src={Gas} alt="" />{car.gasoline}</div>
-                                            <div><img src={Carrol} />Manual</div>
-                                            <div><img src={Profileuser} />{car.capacity} people</div>
-                                        </div>
-                                        <div className="price-box">
-                                            <div className="price">{car.price}/ <span className='days'>day</span> </div>
-                                            <div><Link className="btn rentbnt" to={`/payment/${car.id}`}>Rent Car</Link></div>
-                                        </div>
-                                    </div>
-                                })}
-                            </div>
+                            <CarList  />
                         </section>
                     </div>
                 </div>
@@ -186,3 +150,8 @@ const Home = () => {
     )
 }
 export default Home;
+
+
+/*<CarList id ={users.id} />
+ const [changeColor, setChangeColor] = useState(false)
+<img onClick={() => setChangeColor(!changeColor(console.log(users)))} src={changeColor ? Emptyheart : Heart} alt="" />*/ 

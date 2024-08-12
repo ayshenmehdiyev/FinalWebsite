@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+
+  .custom-toast-container .Toastify__progress-bar {
+    background-color: #0066ff !important; /* Proqress barın rəngini dəyişin */
+  } 
+  .custom-toast-container svg{
+    fill: #0066ff;
+  }
+  .custom-toast-container .Toastify__progress-bar--success{
+    background-color: #ffffff;
+
+  }   
+
+/*******************************************************************/
 .stroke-secondary-300 {
-    stroke: #90a3bf;
+    stroke: #88ff00;
     color: #3563E9;
 }
 
